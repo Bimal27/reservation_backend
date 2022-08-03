@@ -13,7 +13,12 @@ const server = express();
 
 server.use(express.json());
 
-server.use(cors({ origin: "http://localhost:3001", credentials: true }));
+server.use(
+  cors({
+    origin: "https://reservation-backend-api.herokuapp.com",
+    credentials: true
+  })
+);
 
 // *******************Routes*************************
 
@@ -33,7 +38,7 @@ mongoose.connection.on("connected", ()=>{
 })
 
  mongoose.connection.on("error",() =>{
-     console.log(error)
+     console.log("error")
  })
        
 
