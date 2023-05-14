@@ -15,7 +15,7 @@ server.use(express.json());
 
 server.use(
   cors({
-    origin: "https://reservation-backend1.onrender.com",
+    origin: "https://reservation-web-page.vercel.app",
     credentials: true
   })
 );
