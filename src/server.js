@@ -15,7 +15,7 @@ server.use(express.json());
 
 server.use(
   cors({
-    origin: "https://reservation-backend-api.herokuapp.com",
+    origin: "https://reservation-backend1.onrender.com",
     credentials: true
   })
 );
